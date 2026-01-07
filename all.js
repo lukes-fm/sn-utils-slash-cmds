@@ -1,5 +1,5 @@
 /**
- * Hint: Open app navigator <search>
+ * Hint: Open All menu <search>
  * Order: 100
  */
 
