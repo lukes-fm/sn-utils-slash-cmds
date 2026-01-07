@@ -2,4 +2,4 @@
 
 Custom SN Utils slash commands.
 
-I got annoyed the Application Navigator shortcut `CTRL + ALT + A` didn't work on Firefox.
+I was annoyed the filter navigator shortcut `CTRL + ALT + A` didn't work on Firefox.
