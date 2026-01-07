@@ -5,6 +5,7 @@
 
 javascript: (function () {
   let textToInject = '$0';
+
   let findAndClick = (root) => {
     let e = root.querySelector('[aria-label="All"]');
     if (e) {
@@ -14,6 +15,7 @@ javascript: (function () {
       }, 350);
       return true;
     }
+
     let nodes = root.querySelectorAll('*');
     for (let n of nodes) {
       if (n.shadowRoot) {
@@ -22,6 +24,7 @@ javascript: (function () {
     }
     return false;
   };
+
   let findAndType = (root) => {
     let input = root.querySelector('input[placeholder="Filter"]');
     if (input) {
@@ -30,6 +33,7 @@ javascript: (function () {
       input.dispatchEvent(new Event('input', { bubbles: true }));
       return true;
     }
+
     let nodes = root.querySelectorAll('*');
     for (let n of nodes) {
       if (n.shadowRoot) {
@@ -38,6 +42,7 @@ javascript: (function () {
     }
     return false;
   };
+
   if (!findAndClick(document))
     console.log('SNUtils: Navigation element not found.');
 })();
