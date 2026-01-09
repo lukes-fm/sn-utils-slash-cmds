@@ -12,5 +12,12 @@
     "fields": "",
     "order": 100,
     "overwriteurl": ""
+  },
+  "eam": {
+    "url": "/now/eamworkspace/home",
+    "hint": "Open Enterprise Asset Management Workspace",
+    "fields": "",
+    "order": 100,
+    "overwriteurl": ""
   }
 }
