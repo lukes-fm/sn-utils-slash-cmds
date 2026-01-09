@@ -1,0 +1,16 @@
+{
+  "all": {
+    "url": "javascript: (function () {\n  let textToInject = '$0';\n\n  let findAndClick = (root) => {\n    let e = root.querySelector('[aria-label=\"All\"]');\n    if (e) {\n      e.click();\n      setTimeout(() => {\n        findAndType(document);\n      }, 350);\n      return true;\n    }\n\n    let nodes = root.querySelectorAll('*');\n    for (let n of nodes) {\n      if (n.shadowRoot) {\n        if (findAndClick(n.shadowRoot)) return true;\n      }\n    }\n    return false;\n  };\n\n  let findAndType = (root) => {\n    let input = root.querySelector('input[placeholder=\"Filter\"]');\n    if (input) {\n      input.focus();\n      input.value = textToInject;\n      input.dispatchEvent(new Event('input', { bubbles: true }));\n      return true;\n    }\n\n    let nodes = root.querySelectorAll('*');\n    for (let n of nodes) {\n      if (n.shadowRoot) {\n        if (findAndType(n.shadowRoot)) return true;\n      }\n    }\n    return false;\n  };\n\n  if (!findAndClick(document))\n    console.log('SNUtils: Navigation element not found.');\n})();",
+    "hint": "Open All menu <search>",
+    "fields": "",
+    "order": 100,
+    "overwriteurl": ""
+  },
+  "s2p": {
+    "url": "/now/psm/workspace/home",
+    "hint": "Open Source-to-Pay Workspace",
+    "fields": "",
+    "order": 100,
+    "overwriteurl": ""
+  }
+}
