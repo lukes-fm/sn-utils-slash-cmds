@@ -19,5 +19,12 @@
     "fields": "",
     "order": 100,
     "overwriteurl": ""
+  },
+  "csm": {
+    "url": "/now/cwf/agent/home",
+    "hint": "Open CSM/FSM Configurable Workspace",
+    "fields": "",
+    "order": 100,
+    "overwriteurl": ""
   }
 }
