@@ -1,6 +1,6 @@
 # sn-utils-slash-cmds
 
-Custom SN Utils slash commands.
+Got annoyed the All menu shortcut didn't work on Firefox.
 
 ## Setup
 
